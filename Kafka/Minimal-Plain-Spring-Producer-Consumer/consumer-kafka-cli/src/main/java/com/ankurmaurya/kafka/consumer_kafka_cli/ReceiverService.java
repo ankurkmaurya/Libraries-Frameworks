@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public class ReceiverService {
 
 	@KafkaListener(topics = "ej-customer-transactions", groupId = "groupId1")
-	public void listenGroupFoo(String message) {
+	public void listenMessage(String message) {
 	    System.out.println("< " + message);
 	}
 	
